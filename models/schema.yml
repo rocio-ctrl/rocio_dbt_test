@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: stg_example
+    description: "Ejemplo minimo de staging."
+    columns:
+      - name: id
+        tests:
+          - not_null
+          - unique
+
+  - name: example_model
+    description: "Modelo de ejemplo en marts."
